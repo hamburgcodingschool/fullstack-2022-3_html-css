@@ -1,12 +1,14 @@
-/*all style for the media queries example*/
+/*all styles for the media queries example*/
 
 body {
-  background-color: #333;
-  color: #aaa;
-  font-family: 'Courier New', Courier, monospace;
+  /*center it*/
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
-}
 
+  /*visual quality*/
+  font-size: 16px;
+  background-color: #333;
+  color: #aaa;
+  font-family: 'Courier New', Courier, monospace;
+}
