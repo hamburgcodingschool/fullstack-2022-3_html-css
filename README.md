@@ -1,6 +1,6 @@
 # HTML&CSS
 
-## Full Stack Course - January 2022
+## Full Stack Course - July 2022
 
 ### 🤔 Questions?
 
