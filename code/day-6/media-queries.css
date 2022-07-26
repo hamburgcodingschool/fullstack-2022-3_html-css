@@ -7,8 +7,14 @@ body {
   align-items: center;
 
   /*visual quality*/
-  font-size: 16px;
+  font-size: 60px;
   background-color: #333;
-  color: #aaa;
+  color: #ddd;
   font-family: 'Courier New', Courier, monospace;
 }
+
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  body {
+    font-size: 10px;
+  }
+} 
