@@ -1,0 +1,12 @@
+/*all style for the media queries example*/
+
+body {
+  background-color: #333;
+  color: #aaa;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
