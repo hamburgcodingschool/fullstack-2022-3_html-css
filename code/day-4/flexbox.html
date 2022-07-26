@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Navigation</title>
+  <style>
+    .navigation {
+      background-color: aqua;
+      padding: 20px;
+    }
+
+    .navigation li {
+      display: inline-block;
+      padding: 0 2vw;
+    }
+
+    .navigation li:first-child {
+      padding-left: 0;
+    }
+
+    .navigation-flex {
+      background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 200px;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navigation-flex li {
+      list-style-type: none;
+    }
+
+    main {position: relative;}
+
+    main div {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      left: 40vw;
+    }
+
+    main div:first-child {
+      background-color: red;
+      top: 100px;
+    }
+
+    main div:nth-child(2) {
+      background-color: green;
+      top: 200px;
+      left: 42vw;
+    }
+
+    main div:last-child {
+      background-color: blue;
+      top: 300px;
+      left: 36vw;
+    }
+
+  </style>
+</head>
+<body>
+  <!--nav>
+    <ul class="navigation">
+      <li>Admin</li>
+      <li>Home</li>
+      <li>All Artists</li>
+      <li>Rock</li>
+      <li>Pop</li>
+      <li>R&B</li>
+      <li>Punk</li>
+      <li>Other</li>
+    </ul>
+  </nav-->
+  <nav>
+    <ul class="navigation-flex">
+      <li>Admin</li>
+      <li>Home</li>
+      <li>All Artists</li>
+      <li>Rock</li>
+      <li>Pop</li>
+      <li>R&B</li>
+      <li>Punk</li>
+      <li>Other</li>
+    </ul>
+  </nav>
+  <main>
+    <div></div>
+    <div></div>
+    <div></div>
+  </main>
+</body>
+</html>

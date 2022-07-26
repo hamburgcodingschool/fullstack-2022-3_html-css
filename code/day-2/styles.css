@@ -1,0 +1,9 @@
+main {
+  width: 600px;
+  margin: 0 auto;
+}
+
+ul li {
+  color: green;
+  font-weight: bold;
+}

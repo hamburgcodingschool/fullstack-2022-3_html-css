@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mondrian</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-size: 0;
+    }
+    div {
+      background-color: #fff;
+      margin: 1% 0 0 1%;
+      display: inline-block;
+    }
+    .canvas {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+    }
+    .w-100 {
+      width: 100%;
+      background-color: #000;
+      margin: 0;
+      white-space: nowrap;
+      position: relative;
+    }
+    .w-50 {
+      width: 48.5%;
+    }
+    .w-25 {
+      width: 24%;
+    }
+
+    .h-small {
+      height: 150px;
+    }
+    .h-middle {
+      height: 300px;
+    }
+
+    .up-small {
+      position: absolute;
+      top: 0px;
+      right: 1%;
+      width: 23.5%;
+      height: calc(300px + 2%);//needs fixing
+    }
+    
+    .blue {
+      background-color: blue;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .last {
+      margin-bottom: 1%;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="w-100">
+      <div class="w-50 h-small blue"></div>
+      <div class="w-25 h-small"></div>
+      <br>
+      <div class="yellow blue w-25 h-small last"></div>
+      <div class="w-50 h-small last"></div>
+      <div class="w-25 h-middle blue up-small last"></div>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hv</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    nav {
+      background: linear-gradient(90deg, rgba(2,141,170,1) 0%, rgba(2,101,170,1) 100%);
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+    h1 {
+      font-size: 1rem;
+      font-family: sans-serif;
+    }
+    ul {
+      font-size: 20px;
+      font-family: sans-serif;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+    }
+    svg {
+      padding-right: 10px;
+    }
+
+    /* no-flex */
+    .no-flex li {
+      display: inline-block;
+      padding: 0 5%;
+    }
+    .no-flex li:first-child {
+      padding-left: 0
+    }
+    .no-flex svg, .no-flex span {
+      vertical-align: middle;
+    }
+
+    /* flex */
+    .flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    .flex a {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>ohne flex-box</h1>
+
+  <nav>
+    <ul class="no-flex">
+      <li>
+        <a href="#">
+          <i data-feather="home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-feather="star"></i>
+          <span>Hosen</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-feather="star"></i>
+          <span>Sweater</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-feather="star"></i>
+          <span>Apparel</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-feather="star"></i>
+          <span>Caps</span>
+        </a>
+      </li><li>
+        <a href="#">
+          <i data-feather="star"></i>
+          <span>Caps</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <h1>mit flex-box</h1>
+  <nav>
+    <ul class="flex">
+      <li>
+        <a href="#">
+          <i data-feather="home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-feather="star"></i>
+          Hosen
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-feather="star"></i>
+          Sweater
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-feather="star"></i>
+          Apparel
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-feather="star"></i>
+          Caps
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-feather="airplay"></i>
+          Caps
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i data-feather="star"></i>
+          Caps
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+
+</body>
+<script>
+  feather.replace()
+</script>
+</html>

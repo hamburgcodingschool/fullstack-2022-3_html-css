@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Navigation</title>
+  <style>
+
+    .navigation-flex {
+      background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 200px;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navigation-flex li {
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      flex-grow: 1;
+      border-right: 1px solid #666;
+      border-left: 1px solid #eee;
+      text-align: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="navigation-flex">
+      <li>All Artists</li>
+      <li>Rock</li>
+      <li>Pop</li>
+      <li>R&B</li>
+      <li>Punk</li>
+      <li>Other</li>
+    </ul>
+  </nav>
+</body>
+</html>
