@@ -8,13 +8,25 @@ body {
 
   /*visual quality*/
   font-size: 60px;
-  background-color: #333;
-  color: #ddd;
   font-family: 'Courier New', Courier, monospace;
 }
 
-@media screen and (max-width: 600px) and (min-width: 500px) {
+#mobile {
+  display: none;
+}
+#fullwidth {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
   body {
     font-size: 10px;
+  }
+  #mobile {
+    display: block;
+  }
+
+  #fullwidth {
+    display: none;
   }
 } 
