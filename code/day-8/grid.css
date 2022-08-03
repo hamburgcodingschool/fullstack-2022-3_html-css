@@ -1,0 +1,29 @@
+/* css for grid example*/
+
+#page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  grid-template-areas:
+    "sidemenu   sidemenu  menu     menu"
+    "sidemenu   sidemenu  content  content";
+}
+
+aside {
+  grid-area: sidemenu;
+}
+
+main {
+  grid-area: content;
+}
+
+nav {
+  grid-area: menu;
+}
+
+/*helper class*/
+.wireframe {
+  background-color: #ccc;
+  margin: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tables</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      table,
+      td,
+      th {
+        border-collapse: collapse;
+        border: 1px solid #000;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        kalender
+      </caption>
+      <thead>
+        <tr>
+          <th>mon</th>
+          <th>tue</th>
+          <th>wed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">1</td>
+
+          <td rowspan="2">3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

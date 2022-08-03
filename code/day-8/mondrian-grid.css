@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "red red blue blue"
+    "red red yellow yellow"
+    "red red yellow yellow";
+}
+
+.red {
+  background-color: red;
+  grid-area: red;
+}
+
+.blue {
+  background-color: blue;
+  grid-area: blue;
+}
+
+.yellow {
+  background-color: yellow;
+  grid-area: yellow;
+}
