@@ -1,0 +1,24 @@
+// css for mix ins
+
+body {
+  background-color: aliceblue;
+}
+
+@mixin base-font($font-size) {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: $font-size;
+}
+
+h1 {
+  @include base-font(30px);
+}
+
+h2 {
+  @include base-font(20px);
+}
+
+h3 {
+  @include base-font(10px);
+}

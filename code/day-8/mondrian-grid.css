@@ -22,3 +22,7 @@ body {
   background-color: yellow;
   grid-area: yellow;
 }
+
+.green {
+  background-color: green;
+}

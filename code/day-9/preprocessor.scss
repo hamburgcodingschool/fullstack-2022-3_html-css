@@ -1,0 +1,23 @@
+/*test*/
+
+@mixin headline-font-style($font-size, $font-color: #cccccc) {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: $font-color;
+  font-size: $font-size;
+}
+
+h1 {
+  @include headline-font-style(50px, red);
+}
+
+h2 {
+  @include headline-font-style(40px);
+}
+
+h3 {
+  @include headline-font-style(30px);
+}
+svg circle {
+  opacity: 0;
+}

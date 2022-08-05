@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>debug css</title>
+    <style>
+      body {
+        width: 75%;
+        margin: 50px auto 0;
+        font-size: 28px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      code {
+        font-family: monospace;
+        display: block;
+        margin: 10px 10px 70px;
+        padding: 10px;
+        background-color: #ddd;
+        flex: 1;
+      }
+
+      p {
+        background-color: #000;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>What to check if your css fails to work?</h1>
+
+    <h2>wrong file path</h2>
+    <code> link rel="stylesheet" href="../csss/styles.css" </code>
+
+    <h2>mistype a property</h2>
+    <code> pading: 10px </code>
+
+    <h2>bad/wrong values or missing units</h2>
+    <code>
+      opacity: 100
+      <br />
+      margin: 10
+    </code>
+
+    <h2>some properties are dependant</h2>
+    <code> z-index: 100 </code>
+
+    <h2>overriding</h2>
+    <code>
+      width: 200px;
+      <br />
+      min-width: 20%;
+    </code>
+
+    <h1>Deeper look at the Inspector</h1>
+    <ul>
+      <li>Reorder/Edit HTML</li>
+      <li>Force pseudo states</li>
+      <li>Coverage: show unused css</li>
+    </ul>
+
+    <code>
+      good read: <a href="https://debuggingcss.com/">Debugging CSS</a>
+    </code>
+  </body>
+</html>
